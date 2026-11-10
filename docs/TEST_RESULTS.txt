@@ -1,0 +1,70 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/docintel/backend
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.13.0, Faker-40.44.0, anyio-4.16.0
+collecting ... collected 57 items
+
+tests/test_api.py::test_auth_required PASSED                             [  1%]
+tests/test_api.py::test_upload_process_result PASSED                     [  3%]
+tests/test_api.py::test_multi_upload_with_rejections PASSED              [  5%]
+tests/test_api.py::test_filename_sanitised PASSED                        [  7%]
+tests/test_api.py::test_size_limit PASSED                                [  8%]
+tests/test_api.py::test_manual_correction_revalidates_and_audits PASSED  [ 10%]
+tests/test_api.py::test_correction_validation_errors PASSED              [ 12%]
+tests/test_api.py::test_duplicate_detection PASSED                       [ 14%]
+tests/test_api.py::test_pdf_vs_excel_cross_verification PASSED           [ 15%]
+tests/test_api.py::test_list_filters_and_search PASSED                   [ 17%]
+tests/test_api.py::test_stats_and_delete PASSED                          [ 19%]
+tests/test_detect_normalize.py::test_magic_bytes_beat_extension PASSED   [ 21%]
+tests/test_detect_normalize.py::test_csv_and_binary_rejection PASSED     [ 22%]
+tests/test_detect_normalize.py::test_parse_amount_formats PASSED         [ 24%]
+tests/test_detect_normalize.py::test_dates PASSED                        [ 26%]
+tests/test_detect_normalize.py::test_supplier_normalisation PASSED       [ 28%]
+tests/test_extraction_validation.py::test_rules_extract_all_layouts[A] PASSED [ 29%]
+tests/test_extraction_validation.py::test_rules_extract_all_layouts[B] PASSED [ 31%]
+tests/test_extraction_validation.py::test_rules_extract_all_layouts[C] PASSED [ 33%]
+tests/test_extraction_validation.py::test_rules_extract_all_layouts[D] PASSED [ 35%]
+tests/test_extraction_validation.py::test_missing_fields_stay_null PASSED [ 36%]
+tests/test_extraction_validation.py::test_grounding_discards_hallucinations PASSED [ 38%]
+tests/test_extraction_validation.py::test_llm_path_and_fallback PASSED   [ 40%]
+tests/test_extraction_validation.py::test_llm_json_parsing PASSED        [ 42%]
+tests/test_extraction_validation.py::test_segmentation_multi_invoice PASSED [ 43%]
+tests/test_extraction_validation.py::test_clean_record_has_no_errors PASSED [ 45%]
+tests/test_extraction_validation.py::test_validation_rules[patch0-MISSING_FIELD] PASSED [ 47%]
+tests/test_extraction_validation.py::test_validation_rules[patch1-TOTAL_MISMATCH] PASSED [ 49%]
+tests/test_extraction_validation.py::test_validation_rules[patch2-SUBTOTAL_MISMATCH] PASSED [ 50%]
+tests/test_extraction_validation.py::test_validation_rules[patch3-INVALID_NUMBER] PASSED [ 52%]
+tests/test_extraction_validation.py::test_validation_rules[patch4-INVALID_NUMBER] PASSED [ 54%]
+tests/test_extraction_validation.py::test_validation_rules[patch5-INVALID_CURRENCY] PASSED [ 56%]
+tests/test_extraction_validation.py::test_validation_rules[patch6-INVALID_DATE] PASSED [ 57%]
+tests/test_extraction_validation.py::test_validation_rules[patch7-INVALID_DATE] PASSED [ 59%]
+tests/test_extraction_validation.py::test_validation_rules[patch8-LINE_MISMATCH] PASSED [ 61%]
+tests/test_extraction_validation.py::test_rounding_tolerance PASSED      [ 63%]
+tests/test_failures.py::test_corrupt_files_fail_gracefully PASSED        [ 64%]
+tests/test_failures.py::test_blank_pdf_fails_with_reason PASSED          [ 66%]
+tests/test_failures.py::test_reprocess_failed_job PASSED                 [ 68%]
+tests/test_failures.py::test_reprocess_rejects_non_failed PASSED         [ 70%]
+tests/test_failures.py::test_unexpected_exception_is_contained PASSED    [ 71%]
+tests/test_failures.py::test_claim_is_atomic PASSED                      [ 73%]
+tests/test_pdf_ocr.py::test_digital_pdf_uses_text_layer PASSED           [ 75%]
+tests/test_pdf_ocr.py::test_multi_page_pdf_progress PASSED               [ 77%]
+tests/test_pdf_ocr.py::test_scanned_pdf_falls_back_to_ocr PASSED         [ 78%]
+tests/test_pdf_ocr.py::test_degraded_image_ocr PASSED                    [ 80%]
+tests/test_pdf_ocr.py::test_multipage_tiff PASSED                        [ 82%]
+tests/test_pdf_ocr.py::test_corrupt_inputs PASSED                        [ 84%]
+tests/test_pdf_ocr.py::test_page_limit PASSED                            [ 85%]
+tests/test_spreadsheets.py::test_xlsx_multi_sheet PASSED                 [ 87%]
+tests/test_spreadsheets.py::test_csv_encodings_and_delimiters[utf-8-,] PASSED [ 89%]
+tests/test_spreadsheets.py::test_csv_encodings_and_delimiters[cp1252-;] PASSED [ 91%]
+tests/test_spreadsheets.py::test_csv_encodings_and_delimiters[utf-16-,] PASSED [ 92%]
+tests/test_spreadsheets.py::test_xls PASSED                              [ 94%]
+tests/test_spreadsheets.py::test_multiple_invoices_grouped_without_mixing PASSED [ 96%]
+tests/test_spreadsheets.py::test_empty_and_corrupt PASSED                [ 98%]
+tests/test_spreadsheets.py::test_unknown_layout_returns_no_table PASSED  [100%]
+
+../../../../usr/local/lib/python3.12/dist-packages/fastapi/testclient.py:1
+    from starlette.testclient import TestClient as TestClient  # noqa
+

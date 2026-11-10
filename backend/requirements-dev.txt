@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8
+httpx>=0.27
+reportlab>=4.1
+faker>=24
+xlwt>=1.3

@@ -1,0 +1,9 @@
+Invoice Number,Invoice Date,Supplier,Customer,Description,Quantity,Unit Price,Line Total,Subtotal,Tax,Total,Currency
+A95597,2025-06-30,Martinez-Ramos,Lambert Group,Licence key,1.0,398.66,398.66,5319.88,425.59,5745.47,GBP
+A95597,2025-06-30,Martinez-Ramos,Lambert Group,Paper ream,9.0,244.34,2199.06,5319.88,425.59,5745.47,GBP
+A95597,2025-06-30,Martinez-Ramos,Lambert Group,Consulting hour,7.0,55.19,386.33,5319.88,425.59,5745.47,GBP
+A95597,2025-06-30,Martinez-Ramos,Lambert Group,Cable set,7.0,333.69,2335.83,5319.88,425.59,5745.47,GBP
+INV-2025-3337,2025-02-18,Lewis LLC,Prince and Sons,Training session,1.0,159.62,159.62,3796.36,569.45,4365.81,EUR
+INV-2025-3337,2025-02-18,Lewis LLC,Prince and Sons,Paper ream,6.0,209.97,1259.82,3796.36,569.45,4365.81,EUR
+INV-2025-3337,2025-02-18,Lewis LLC,Prince and Sons,Keyboard,1.0,432.8,432.8,3796.36,569.45,4365.81,EUR
+INV-2025-3337,2025-02-18,Lewis LLC,Prince and Sons,Maintenance plan,6.0,324.02,1944.12,3796.36,569.45,4365.81,EUR

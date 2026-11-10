@@ -1,0 +1,10 @@
+Invoice Number;Invoice Date;Supplier;Customer;Description;Quantity;Unit Price;Line Total;Subtotal;Tax;Total;Currency
+A95137;2025-02-21;Martinez, Brown and Fleming;Peters, Mueller and Rodriguez;Office chair;8.0;184.12;1472.96;4633.48;370.68;5004.16;GBP
+A95137;2025-02-21;Martinez, Brown and Fleming;Peters, Mueller and Rodriguez;Toner cartridge;2.0;258.38;516.76;4633.48;370.68;5004.16;GBP
+A95137;2025-02-21;Martinez, Brown and Fleming;Peters, Mueller and Rodriguez;Keyboard;7.0;377.68;2643.76;4633.48;370.68;5004.16;GBP
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Toner cartridge;5.0;314.18;1570.9;8596.84;429.84;9026.68;EUR
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Licence key;4.0;52.73;210.92;8596.84;429.84;9026.68;EUR
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Training session;8.0;494.27;3954.16;8596.84;429.84;9026.68;EUR
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Shipping fee;8.0;90.73;725.84;8596.84;429.84;9026.68;EUR
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Gadget;3.0;211.34;634.02;8596.84;429.84;9026.68;EUR
+A46621;2024-10-27;Brown, Lee and Williams;Romero PLC;Monitor 27in;4.0;375.25;1501.0;8596.84;429.84;9026.68;EUR

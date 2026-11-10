@@ -1,0 +1,13 @@
+Invoice Number,Invoice Date,Supplier,Customer,Description,Quantity,Unit Price,Line Total,Subtotal,Tax,Total,Currency
+INV-2025-6882,2025-05-25,"Foster, Morales and Arroyo","Moore, Kaiser and Johnson",Monitor 27in,9.0,127.29,1145.61,3784.11,302.73,4086.84,GBP
+INV-2025-6882,2025-05-25,"Foster, Morales and Arroyo","Moore, Kaiser and Johnson",Keyboard,7.0,353.8,2476.6,3784.11,302.73,4086.84,GBP
+INV-2025-6882,2025-05-25,"Foster, Morales and Arroyo","Moore, Kaiser and Johnson",Office chair,5.0,32.38,161.9,3784.11,302.73,4086.84,GBP
+A35419,2024-07-24,"Stein, Drake and Thomas","Baird, Sandoval and Bell",Network switch,6.0,360.57,2163.42,6453.77,968.07,7421.84,USD
+A35419,2024-07-24,"Stein, Drake and Thomas","Baird, Sandoval and Bell",Office chair,6.0,342.87,2057.22,6453.77,968.07,7421.84,USD
+A35419,2024-07-24,"Stein, Drake and Thomas","Baird, Sandoval and Bell",Monitor 27in,4.0,8.34,33.36,6453.77,968.07,7421.84,USD
+A35419,2024-07-24,"Stein, Drake and Thomas","Baird, Sandoval and Bell",Widget,5.0,370.87,1854.35,6453.77,968.07,7421.84,USD
+A35419,2024-07-24,"Stein, Drake and Thomas","Baird, Sandoval and Bell",USB hub,9.0,38.38,345.42,6453.77,968.07,7421.84,USD
+A88135,2024-08-06,"Kelley, Smith and Lloyd","Santos, Rose and Peck",Paper ream,3.0,448.76,1346.28,4896.41,244.82,5141.23,USD
+A88135,2024-08-06,"Kelley, Smith and Lloyd","Santos, Rose and Peck",Cable set,8.0,211.43,1691.44,4896.41,244.82,5141.23,USD
+A88135,2024-08-06,"Kelley, Smith and Lloyd","Santos, Rose and Peck",Monitor 27in,1.0,474.64,474.64,4896.41,244.82,5141.23,USD
+A88135,2024-08-06,"Kelley, Smith and Lloyd","Santos, Rose and Peck",USB hub,3.0,461.35,1384.05,4896.41,244.82,5141.23,USD
