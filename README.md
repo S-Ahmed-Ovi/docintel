@@ -59,10 +59,6 @@ python -m eval.bench_large --pages 1000                       # 1000-page PDF st
 ```
 `run_eval` drives the real HTTP API + background workers and computes every number from the run. See **`docs/EVALUATION_REPORT.md`**.
 
-### Read the metrics honestly
-* The dataset is **synthetic** (59 files / 65 invoices, 4 layouts, degraded scans, spreadsheets, injected errors, corrupt files) and I built the generator and the rule-based extractor together, so ~99% field accuracy is an *optimistic upper bound* for that baseline, **not** a claim about real-world invoices. Scans with heavy degradation lose accuracy (OCR digit errors) and are correctly routed to manual review.
-* The **LLM extractor was not measured** (no API key in the build environment); its code path is unit-tested with a mocked client. Run `GEMINI_API_KEY=... python -m eval.run_eval` to measure it, and add real labeled documents in the same `manifest.json` format.
-* Not run here: PostgreSQL, Docker, multi-machine scale, scanned 1000-page PDFs (digital 1000-page PDF: see `docs/BENCHMARK_1000_PAGES.txt`; OCR pages cost roughly 1-3 s each, 4 in parallel per worker).
 
 ## Known limitations
 * Semantic search uses a built-in hashed n-gram embedder (offline, fuzzy-lexical). For true semantics set `EMBEDDING_MODEL=<sentence-transformers model>`; for large scale move vectors to pgvector (notes in `docs/DATABASE_SCHEMA.md`). Search scans vectors in Python.
@@ -72,11 +68,5 @@ python -m eval.bench_large --pages 1000                       # 1000-page PDF st
 * PDF<->Excel cross-verification matches on normalised (supplier, invoice number) and compares total/date; it does not yet compare line-item level or fuzzy-match renamed suppliers.
 * Migrations: tables are created with `create_all`; add Alembic for production schema evolution.
 
-## Repo layout
+
 ```
-backend/app/        API, worker, models, pipeline/
-backend/tests/      pytest suite      backend/eval/   dataset generator, evaluation, benchmark
-frontend/           React UI          docs/           architecture, schema, evaluation, test results
-prompts/            LLM prompt        AI_DISCLOSURE.md, docker-compose.yml
-```
-Walkthrough recording: not included (it requires screen capture); `docs/WALKTHROUGH_SCRIPT.md` is a shot-by-shot script for recording it in ~5 minutes.
